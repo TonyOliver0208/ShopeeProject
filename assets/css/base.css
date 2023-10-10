@@ -57,7 +57,6 @@ html {
     padding-left: 5px;
     padding-right: 5px;
     width: 83.3334%;
-
 }
 
 
@@ -190,6 +189,7 @@ html {
     list-style: none;
     padding: 10px 16px;
     display: none;
+    z-index: 1;
 }
 
 .select-input__list::before {
@@ -219,12 +219,40 @@ html {
     color: var(--primary-color);
 }
 
-.select-input__item {
+/* Pagination */
 
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
 }
 
-.select-input__link {
+.pagination-item {
+}
 
+.pagination-item--active .pagination-item__link {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.pagination-item--active .pagination-item__link:hover {
+    background-color: #ed5c3f;
+}
+
+.pagination-item__link {
+    --height: 30px ;
+    display: block;
+    text-decoration: none;
+    min-width: 40px;
+    text-align: center;
+    height: 3rem;
+    line-height: var(--height);
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #9F9F9F;
+    border-radius: 2px;
 }
 
 
